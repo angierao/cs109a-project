@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<h1>
+Cardio </h1>
 <style>
 
 text {
-  font: 10px sans-serif;
+  font: 30px sans-serif;
   text-anchor: middle;
 }
 
@@ -24,7 +26,7 @@ var pack = d3.pack()
     .padding(1.5);
 
 d3.csv("cardio.csv", function(d) {
-  d.value = +d.value;
+    d.value = +d.value;
   if (d.value) return d;
 }, function(error, classes) {
   if (error) throw error;
@@ -48,8 +50,15 @@ d3.csv("cardio.csv", function(d) {
 
   node.append("circle")
       .attr("id", function(d) { return d.id; })
-      .attr("r", function(d) { return d.r; })
-      .style("fill", function(d) { return color(d.package); });
+      .attr("r", function(d) {
+       return Math.abs(d.r); })
+      .style("fill", function(d) {
+        if (d.value > 0){
+          return "red";
+        }
+        else {
+          return "blue"
+        }});
 
   node.append("clipPath")
       .attr("id", function(d) { return "clip-" + d.id; })
@@ -68,5 +77,6 @@ d3.csv("cardio.csv", function(d) {
   node.append("title")
       .text(function(d) { return d.id + "\n" + format(d.value); });
 });
+
 
 </script>
