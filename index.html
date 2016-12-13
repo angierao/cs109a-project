@@ -114,19 +114,12 @@
 	    }
 	    
     </style>
-    <script>
-        function includeContent(file) {
-            URL = window.location.href;
-	    URL = URL.substring(0, URL.lastIndexOf("/") + 1) + file;
-	    $(function(){
-	      $("#includedContent").load(URL);
-	    });
-
-        }
-	$(document).ready(function() {
-	    includeContent("overview.html")
-	});
-    </script>
+    <script> 
+    $(function(){
+      // Change this line to include the file you want
+      $("#includedContent").load("https://angierao.github.io/cs109a-project/overview.html"); 
+    });
+    </script> 
   </head>
 
   <body id="thisbody">
@@ -146,7 +139,9 @@
       </div>
 
       <!-- MAIN CONTENT -->
-<!--       <div id="main_content_wrap" class="outer"> -->
+          <div id="main_content_wrap" class="outer"> 
+          <div id = "includedContent">
+          </div>
 	<div>
 	    <a href="https://angierao.github.io/cs109a-project/intro.html">
 		<button id = "color1">1 - Overview</button>
@@ -174,6 +169,7 @@
             </a>
               
               
+      </div>
       </div>
 
 
