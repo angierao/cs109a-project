@@ -1,0 +1,49 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,53,Benin,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,53,Benin,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,11.16,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,53,Benin,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,27.13,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,233,Burkina Faso,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.14,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,233,Burkina Faso,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,6.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,233,Burkina Faso,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,28.24,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,35,Cabo Verde,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.85,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,35,Cabo Verde,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,22.93,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,35,Cabo Verde,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,26.77,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,107,Côte d'Ivoire,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.53,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,107,Côte d'Ivoire,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,3.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,107,Côte d'Ivoire,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,48.04,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,75,Gambia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.09,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,75,Gambia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,5.44,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,75,Gambia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,21.47,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,81,Ghana,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,81,Ghana,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,2.76,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,81,Ghana,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,16.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,90,Guinea,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,90,Guinea,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,11.85,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,90,Guinea,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,55.38,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,175,Guinea-Bissau,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,175,Guinea-Bissau,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,17.57,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,175,Guinea-Bissau,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,16.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,123,Liberia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.35,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,123,Liberia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,1.43,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,123,Liberia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,35.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,133,Mali,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.14,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,133,Mali,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.1,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,133,Mali,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,52.77,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,136,Mauritania,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,136,Mauritania,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,1.67,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,136,Mauritania,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,3.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,158,Niger,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,158,Niger,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,5.58,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,158,Niger,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,23.84,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,159,Nigeria,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,159,Nigeria,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,22.48,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,159,Nigeria,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,49.04,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,195,Senegal,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,195,Senegal,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,8.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,195,Senegal,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,27.49,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,197,Sierra Leone,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.97,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,197,Sierra Leone,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.34,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,197,Sierra Leone,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,37.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,217,Togo,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.6,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,217,Togo,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,5.16,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,217,Togo,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,23.77,Fc,Calculated data

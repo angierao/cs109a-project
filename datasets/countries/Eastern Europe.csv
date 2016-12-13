@@ -1,0 +1,31 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,57,Belarus,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.09,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,57,Belarus,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,8.79,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,57,Belarus,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,74.88,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,27,Bulgaria,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.18,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,27,Bulgaria,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,22.43,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,27,Bulgaria,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,92.86,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,167,Czechia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,167,Czechia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,19.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,167,Czechia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,55.43,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,97,Hungary,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,97,Hungary,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,22.88,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,97,Hungary,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,79.34,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,173,Poland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.5,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,173,Poland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.61,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,173,Poland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,114.84,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,146,Republic of Moldova,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,146,Republic of Moldova,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,16.77,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,146,Republic of Moldova,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,47.87,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,183,Romania,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.52,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,183,Romania,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,16.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,183,Romania,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,102.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,185,Russian Federation,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.28,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,185,Russian Federation,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.26,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,185,Russian Federation,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,63.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,199,Slovakia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.19,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,199,Slovakia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,23.28,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,199,Slovakia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,62.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,230,Ukraine,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.19,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,230,Ukraine,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.28,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,230,Ukraine,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,68.29,Fc,Calculated data

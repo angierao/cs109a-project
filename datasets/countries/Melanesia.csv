@@ -1,0 +1,13 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,66,Fiji,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,66,Fiji,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.96,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,66,Fiji,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,27.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,153,New Caledonia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.49,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,153,New Caledonia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,27.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,153,New Caledonia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,38.17,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,25,Solomon Islands,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.31,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,25,Solomon Islands,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,38.79,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,25,Solomon Islands,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,16.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,155,Vanuatu,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.15,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,155,Vanuatu,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,32.91,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,155,Vanuatu,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,56.8,Fc,Calculated data

@@ -1,0 +1,43 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,8,Antigua and Barbuda,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,8,Antigua and Barbuda,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,104.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,8,Antigua and Barbuda,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,50.41,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,12,Bahamas,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,12,Bahamas,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,43.81,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,12,Bahamas,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,106.12,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,14,Barbados,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.45,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,14,Barbados,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.44,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,14,Barbados,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,52.72,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,49,Cuba,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.1,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,49,Cuba,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,44.77,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,49,Cuba,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,76.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,55,Dominica,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,6.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,55,Dominica,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,38.12,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,55,Dominica,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,80.74,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,56,Dominican Republic,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.81,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,56,Dominican Republic,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,43.79,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,56,Dominican Republic,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,9.47,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,86,Grenada,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.31,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,86,Grenada,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,52.7,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,86,Grenada,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,23.41,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,93,Haiti,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,93,Haiti,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,33.36,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,93,Haiti,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,37.14,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,109,Jamaica,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.32,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,109,Jamaica,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,27.4,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,109,Jamaica,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,57.37,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,151,Netherlands Antilles (former),645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,151,Netherlands Antilles (former),645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,23.38,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,151,Netherlands Antilles (former),645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,55.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,188,Saint Kitts and Nevis,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.42,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,188,Saint Kitts and Nevis,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,30.78,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,188,Saint Kitts and Nevis,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,45.17,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,189,Saint Lucia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.93,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,189,Saint Lucia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,26.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,189,Saint Lucia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,18.04,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,191,Saint Vincent and the Grenadines,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.58,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,191,Saint Vincent and the Grenadines,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.04,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,191,Saint Vincent and the Grenadines,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,36.99,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,220,Trinidad and Tobago,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.35,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,220,Trinidad and Tobago,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,30.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,220,Trinidad and Tobago,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,24.7,Fc,Calculated data

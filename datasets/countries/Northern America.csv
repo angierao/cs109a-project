@@ -1,0 +1,10 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,17,Bermuda,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,17,Bermuda,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,130.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,17,Bermuda,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,112.49,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,33,Canada,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.68,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,33,Canada,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,24.53,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,33,Canada,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,80.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,231,United States of America,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,231,United States of America,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.26,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,231,United States of America,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,79.27,Fc,Calculated data
