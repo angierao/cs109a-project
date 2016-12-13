@@ -1,0 +1,22 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,11,Austria,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,5.31,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,11,Austria,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,38.33,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,11,Austria,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,63.96,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,255,Belgium,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,255,Belgium,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,24.44,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,255,Belgium,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,96.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,68,France,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,5.55,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,68,France,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,30.91,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,68,France,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,76.68,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,79,Germany,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,6.38,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,79,Germany,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.95,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,79,Germany,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,70.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,256,Luxembourg,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,8.23,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,256,Luxembourg,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,49.07,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,256,Luxembourg,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,59.87,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,150,Netherlands,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,8.86,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,150,Netherlands,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,19.75,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,150,Netherlands,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,61.93,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,211,Switzerland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,7.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,211,Switzerland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,36.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,211,Switzerland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,75.15,Fc,Calculated data

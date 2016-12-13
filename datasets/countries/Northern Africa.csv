@@ -1,0 +1,16 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,4,Algeria,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.36,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,4,Algeria,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,9.72,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,4,Algeria,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,42.43,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,59,Egypt,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,59,Egypt,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,17.35,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,59,Egypt,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,101.82,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,143,Morocco,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,143,Morocco,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.6,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,143,Morocco,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,54.65,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,206,Sudan (former),645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.23,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,206,Sudan (former),645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.71,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,206,Sudan (former),645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,33.38,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,222,Tunisia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.23,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,222,Tunisia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,34.45,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,222,Tunisia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,88.29,Fc,Calculated data

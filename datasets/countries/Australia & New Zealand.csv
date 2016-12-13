@@ -1,0 +1,7 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,10,Australia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.82,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,10,Australia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.71,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,10,Australia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,64.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,156,New Zealand,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,156,New Zealand,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,29.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,156,New Zealand,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,104.68,Fc,Calculated data

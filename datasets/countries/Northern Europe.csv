@@ -1,0 +1,31 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,54,Denmark,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,8.48,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,54,Denmark,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,19.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,54,Denmark,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,65.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,63,Estonia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.52,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,63,Estonia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,63,Estonia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,56.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,67,Finland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,10.66,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,67,Finland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.65,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,67,Finland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,50.74,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,99,Iceland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,9.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,99,Iceland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,21.42,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,99,Iceland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,38.74,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,104,Ireland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,104,Ireland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,16.78,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,104,Ireland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,53.31,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,119,Latvia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.27,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,119,Latvia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,119,Latvia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,55.72,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,126,Lithuania,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.32,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,126,Lithuania,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,7.23,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,126,Lithuania,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,83.32,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,162,Norway,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,8.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,162,Norway,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,17.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,162,Norway,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,47.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,210,Sweden,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,10.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,210,Sweden,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.52,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,210,Sweden,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,49.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,229,United Kingdom,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,229,United Kingdom,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,17.91,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,229,United Kingdom,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,61.28,Fc,Calculated data

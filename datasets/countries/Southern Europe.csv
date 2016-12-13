@@ -1,0 +1,34 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,3,Albania,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.28,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,3,Albania,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,22.65,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,3,Albania,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,102.24,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,80,Bosnia and Herzegovina,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.41,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,80,Bosnia and Herzegovina,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,12.76,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,80,Bosnia and Herzegovina,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,109.7,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,98,Croatia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,98,Croatia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,21.15,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,98,Croatia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,66.69,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,84,Greece,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,84,Greece,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,48.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,84,Greece,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,130.48,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,106,Italy,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,5.39,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,106,Italy,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,42.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,106,Italy,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,111.41,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,134,Malta,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.73,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,134,Malta,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.09,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,134,Malta,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,134.5,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,174,Portugal,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,174,Portugal,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,35.43,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,174,Portugal,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,115.36,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,186,Serbia and Montenegro,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.58,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,186,Serbia and Montenegro,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,39.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,186,Serbia and Montenegro,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,65.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,198,Slovenia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,8.63,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,198,Slovenia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,25.17,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,198,Slovenia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,59.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,203,Spain,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,203,Spain,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,32.92,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,203,Spain,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,96.87,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,154,The former Yugoslav Republic of Macedonia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,154,The former Yugoslav Republic of Macedonia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,26.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,154,The former Yugoslav Republic of Macedonia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,118.07,Fc,Calculated data

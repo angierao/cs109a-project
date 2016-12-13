@@ -1,0 +1,16 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,20,Botswana,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.72,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,20,Botswana,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,26.4,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,20,Botswana,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,23.78,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,122,Lesotho,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,122,Lesotho,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,10.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,122,Lesotho,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,18.84,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,147,Namibia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.77,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,147,Namibia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.42,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,147,Namibia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,14.68,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,202,South Africa,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.48,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,202,South Africa,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,9.24,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,202,South Africa,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,26.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,209,Swaziland,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,209,Swaziland,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,16.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,209,Swaziland,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,13.94,Fc,Calculated data

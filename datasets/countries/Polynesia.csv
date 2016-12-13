@@ -1,0 +1,7 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,70,French Polynesia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.35,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,70,French Polynesia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,30.93,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,70,French Polynesia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,49.84,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,244,Samoa,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.07,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,244,Samoa,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,75.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,244,Samoa,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,10.69,Fc,Calculated data
