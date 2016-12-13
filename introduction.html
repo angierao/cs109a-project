@@ -1,6 +1,7 @@
+
 <html>
   <head>
-    <script type ="text/javascript" src ="js/jquery-1.10.2.min.js"></script>
+    <script type ="text/javascript" src ="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
@@ -8,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <title>You are What You Eat</title>
     <style>
-
       #thisbody{
         padding:0px;
       }
@@ -44,7 +44,7 @@
 	       position: absolute;
 	       top: 50%;
 	       left:50%;
-	       margin-right:-50%;
+/* 	       margin-right:-50%; */
          transform: translate(-50%, -50%);
          text-align:-webkit-center;
     	   text-align: center;
@@ -74,10 +74,9 @@
        }
       .page-header{
 	       padding-bottom:9px;
-	       margin:40px 0 20px;
+/* 	       margin:40px 0 20px; */
 	       line-height:1.1;
 	       color:inherit;
-	       border:5px solid black;
 	       border-left-style:none;
                border-right-style:none;
 	       border-top-style:none;
@@ -113,13 +112,11 @@
 	    #color4 {
 		    background-color: #876E7B;
 	    }
-      button a{
-        color:white;
-      }
 	    
     </style>
     <script> 
     $(function(){
+      // Change this line to include the file you want
       $("#includedContent").load("https://angierao.github.io/cs109a-project/intro.html"); 
     });
     </script> 
@@ -145,19 +142,11 @@
           <div id="main_content_wrap" class="outer"> 
           <div id = "includedContent">
           </div>
-          </div>
-          <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-    <style>
-    a {
-      color:white;
-    }
-    </style>
 	<div>
-	    <a href="https://angierao.github.io/cs109a-project/intro.html">
+	    <a href="https://angierao.github.io/cs109a-project/introduction.html">
 		<button id = "color1">1 - Overview</button>
             </a>
-	    <a href="https://angierao.github.io/cs109a-project/intro.html">
+	    <a href="https://angierao.github.io/cs109a-project/introduction.html">
 		  <button id = "color3">2 - Introduction</button>
             </a>
 	  <a href="https://angierao.github.io/cs109a-project/intro.html">
@@ -181,8 +170,11 @@
               
               
       </div>
+      </div>
 
-    
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
         <footer class="inner">
 		<p>Copyright December 2016.</p>
 		<p> Made by Susan Xu, Angie Rao, and Christine Zhang for Harvard CS 109a: Data Science.</p>
