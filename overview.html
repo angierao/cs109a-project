@@ -1,232 +1,118 @@
+<div class="lead">
+    <div class="col-md-9 col-md-offset-1">
+    <h1 >The Nutritional Peril:</h1>
 
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h2 >It is college application season.</h2>
+      <p class="lead">Every year, millions of individuals suffer from non-communicable diseases. Non-communicable disease are not contagious, rather they develop through your lifestyle choices including dietary intake. There has been past contradictory research on nutrition. According to the <a href="http://www.nytimes.com/2016/08/11/upshot/were-so-confused-the-problems-with-food-and-exercise-studies.html"> New York Times</a>, the same ingredient could be interpreted as starving away cancer or aiding its onset, depending on who you ask. Only two facts are known: holding all exogenous variables constant, consuming more calories will cause weight gain while exercising will produce weight loss. For this project, we chose to apply a data science approach to the former, nutrition, to ask if with enough information, can we can identify trends between food consumption and disease onset rates?  </p>
 
-      <p class="lead">Across the country four million students will be
-      submitting upwards of forty million applications (<a href=
-      "http://www.nytimes.com/2014/11/16/nyregion/applications-by-the-dozen-as-anxious-students-hedge-college-bets.html">source</a>)
-      and then fretting until late March to find the results. Our
-      team at Harvard's Data Science Class has analyzed more than
-      13,000 applications to determine which factors matter most to
-      the top twenty-five colleges in the USA. We have also built
-      an <a href="http://www.chanceme.info/">online predictor</a>
-      that lets a student or parent enter current results, see the
-      chances of getting into an elite college. Even more
-      importantly, the student can then change the values to see if
-      time is better spent improving grades or playing more varsity
-      sports.</p>
-
-      <p>Let's see how one student Morgan, a math-savvy junior, can
-      use <a href="http://www.chanceme.info/">our website</a> to
-      decide where to spend her time.</p>
-    </div>
-  </div>
-  <iframe id="youtubeiframe" width="560" height="315" src=
-  "https://www.youtube.com/embed/yJmguqR9pXo" frameborder="0"
-  allowfullscreen="" name="youtubeiframe"></iframe>
-
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header"> Objectives </h3>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>We hope to provide some clarity, precision and reasonably accurate
-        forecasting of a student's probability of being accepted into a given
-        college. On the one hand, future applicants and their parents can
-        browse through our data analyses to explore how their university of
-        interest compares to others. We want to show them how the schools
-        perform in the sense of gender equality and minorities or how important
-        it is to go to a private highschool.  Next, they can use our predictive
-        model, which is available on a <a href="www.chanceme.info"> publicly
-          accessible website</a>.</p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Data</h3>
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Project Goal </h3>
+    </div>
+  </div>
+
+
+  <div class="col-md-9 col-md-offset-1">
+    <div>
+      <p>We want to better understand the impact of select food groups and their correlation to the mortality rates of cancer, diabetes, and cardiovascular disease. </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>This project would not have been possible without the availability
-      of data on university applications. All our models and visualizations
-      were created using data from the
-      <a href="http://www.collegedata.com">CollegeData website</a>, a platform
-      where many students have submitted their application results.</p>
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Data Sources</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Which factors are most important?</h3>
+    <div class="col-md-9 col-md-offset-1">
+          <img src="http://i.imgur.com/Uppy7Hi.png" width = 300>
+      <p>Food Data stems from FAOSTAT, the Food and Agriculture Organization of the UN. There are <a href="http://www.fao.org/faostat/en/#data/CC">74 crop predictors</a> and <a href="http://www.fao.org/faostat/en/#data/CL">27 livestock predictors</a>. Disease data was obtained from the <a href="http://apps.who.int/gho/data/node.main.A859?lang=en">WHO</a>, World Health Organization. We tested three non-communicable diseases: cancer, diabetes, and cardiovascular disease. </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>Standardized tests, GPA and the school the student is
-      applying to are by far the most important factors that determine
-      admission success. This should come as no surprise. What is
-      surprising is how little other factors matter. Sports can be
-      <a href="http://collegepuzzle.stanford.edu/?p=2088">a huge time sink</a>
-      yet make no difference to a successful admission. Unless the
-      student is a star recruited athlete, a fraction of the time
-      spent on sports would be better spent improving standardized
-      tests, especially the SAT or ACT score.</p>
-    </div>
-
-    <div class="col-md-6 col-md-offset-3">
-      <img src="features.png">
-    </div>
-
-    <div class="col-md-8 col-md-offset-2">
-      <p>Having Legacy which many parents count on and many
-      students wish for turns out not to be as important better AP
-      exams or SAT subject tests.</p>
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Data Exploration</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Diversity &amp; Underrepresented Minorities</h3>
+    <div class="col-md-9 col-md-offset-1">
+      <p>Data exploration was first performed on the dataset to understand general trends between the predictors and disease mortality rates. The predictors were sorted by r squared values to find the most informative data points.
+      <br><img src="http://i.imgur.com/TNHHgx3.png" width=400px>
+      </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>Being an underrepresented minority (Hispanic,
-      African-American, Native American) provides an average boost
-      to the candidate's SAT or ACT by 87 points. This can make a
-      huge difference when the schools are so competitive. However,
-      this advantage varies significantly by school. Carnegie
-      Mellon gives the greatest boost to minorities, with an
-      average increase of 149 points. Harvard is notably the only
-      of the top twenty-five that has statistically no premium
-      given to underrepresented minorities.</p>
-    </div>
-
-    <div class="col-md-6 col-md-offset-3">
-      <img src="minoritySAT.png">
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Data Cleaning</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Are universities truly needs-blind?</h3>
+    <div class="col-md-9 col-md-offset-1">
+      <p>One of the most significant difficulties was cleaning the data for analysis. Almost 25% of the values were missing as shown in the below visualization. Extensive code was written to populate missing values with a regional average. For example, missing values for Cuba were filled with the average of all Central America countries. </p>
+    <img src="http://i.imgur.com/tnKZpuj.png">
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>Most of these elite schools claim to be "needs blind."
-      Their admission decision is not supposed to factor in the
-      ability of the candidate to pay. Our analysis showed this
-      indeed to be the case: whether or not the candidate needed
-      financial assistance had no affect on the acceptance
-      decision. <strong>The acceptance rates, when all other
-      factors were accounted for, remained the same irrespective of
-      whether the student was able to pay full tuition or
-      not.</strong></p>
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Data Science Models</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Are private schools worth the additional price?</h3>
+    <div class="col-md-9 col-md-offset-1">
+      <p>Three different models were tested:      </p>
+      <ol>
+          <li> Naive Linear Regression Model</li>
+          <li> Linear Regression with LASSO for Variable Selection </li>
+          <li> Regression Tree for Advanced Analysis </li>
+       </ol>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>Some private
-      schools have annual tuition as much as college although for
-      twelve years instead of four. For example, $30,000 per year
-      invested at 5% over 12 years means cumulative cost of almost
-      half a million dollars.</p>
-
-      <p>As you can see in the following chart, students at private
-      schools have an advantage in the most critical aspects for
-      college admissions. The differences appear slight, but when
-      twenty points in SAT score can make the difference between
-      acceptance and rejection, the results are pronounced.</p>
-    </div>
-
-    <div class="col-md-8 col-md-offset-2">
-      <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 650px; height: 742px;'><noscript><a href='#'><img alt='Dashboard 5 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Privateschool&#47;Dashboard5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='935' height='700' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Privateschool&#47;Dashboard5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Privateschool&#47;Dashboard5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Predictor Impact</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">College-by-college Differences</h3>
+    <div class="col-md-9 col-md-offset-1">
+      <p>To visualize the impact of certain food predictors, a bubble chart was generated with the radius of the circle porportional to the size of the coefficient. The red and blue colors correspond respectively to positive and negative coefficients.  
+      <img src="http://i.imgur.com/Fukj4nY.png" width="300">
+      </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>Most of us have an intuitive sense about which factors of an
-        application are most important for determining admissions. However,
-        things get murky when we start to think about how each college might
-        differentially weight the factors. Much of the uncertainty surrounding
-        applying to Ivy League schools arises from the seeming randomness of
-        admissions-- why should a 4.0 student with high SAT scores get into
-        Harvard, but not Princeton or Yale? We aimed to quantify some over this
-        inter-college variation.
+    <div class="col-md-9 col-md-offset-1">
+      <h3 class="page-header">Predicted Cancer Rates</h3>
+    </div>
+  </div>
 
-        We asked whether being a legacy had different levels of importance in
-        determining admissions across our 25 schools. We find that although
-        legacy has a positive effect on admission at every school, it is
-        especially important at the Ivy League schools, as well as at Stanford
-        and MIT.</p>
+  <div class="row">
+    <div class="col-md-9 col-md-offset-1">
+      <p>The predicted disease mortality rates from our model were then visualized in a world map format to examine for geographic trends. The above graph shows estimated disease mortality per 100,000 individuals while the below map shows the deviation between the predicted and actual mortality rates. A dark blue-purple indicate a more accurate estimate, brighter purples/pinks indicate an overestimate, and brighter blues indicate an underestimate. Since most of the countries are colored with dark shades, this confirms the validity of our our model. </p>
+      <img src="http://i.imgur.com/WYTVd8X.png">
+      <img src="http://i.imgur.com/UfeU9Su.png">
       </div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-      <img src="legacy.png">
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>We were also curious how gender and race might affect one's chances
-          of admission. We find the following:</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-md-offset-3">
-      <img src="female.png">
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>Our results confirm the conventional wisdom that technical schools
-          like MIT and CalTech, which have a low proportion of matriculating
-          females, are more likely to admit women.</p>
-    </div>
-  </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-9 col-md-offset-1">
       <h3 class="page-header">Conclusion</h3>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>We have provided some much-needed insight into the murky waters of the
-        college admissions process. Our hope is that this information empowers
-        students and their supporters to make informed decisions about
-        priorities and factors to consider when applying to college. Clearly,
-        SAT scores and GPA are the most important factors of an application.
-        Students should focus on boosting their academic profiles in lieu of
-        joining more and more extracurricular activities.  There are some
-        limitations to our approach given the structure of our dataset.
-        For example, we are unable to take account of any personal statements
-        or recommendation letters, which are obviously very important in the
-        application procedure. However, to the best of our knowledge, this
-        analysis is the most extensive open-source tool available to high
-        school students to date.</p>
+    <div class="col-md-9 col-md-offset-1">
+      <p>The goal of this project was to better understand the impact certain food predictors have. While we understand that health is a hollistic outcome dependent on many variables in addition to diet, the consumption of certain food groups appears to be more strongly correlated than others. In particular, starches including potatoes, rice, and wheat should be limited as they are positively linked with cancer, diabetes, and cardiovascular disease incidence rates across the world. The goal of this project was to be informative and utilize a machine learning approach to understanding global health. </p>
     </div>
   </div>
