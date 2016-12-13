@@ -11754,6 +11754,7 @@ div#notebook {
 <hr>
 <h1 id="Naive-Model">Naive Model<a class="anchor-link" href="#Naive-Model">&#182;</a></h1><hr>
 <p>The overall goal of this section is to use a simple linear regression find a naive model for mortality rate using food consumption data. First, we will find a null model, representing the 'average' input and representing a baseline estimation that we will then improve upon. Then we will fit a multilinear regression to all of the predictors (all livestock and all crop predictors), and find a cross-validated $R^2$ for this naive model.</p>
+<p>To summarize, our null model achieved a cross-validated $R^2$ score of 0 for all three diseases. Our naive model achieved a cross-validated score of $$ for diabetes, $$ for cancer, and $$ for cardiovascular diseases.</p>
 
 </div>
 </div>
@@ -11855,7 +11856,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Cancer-LinReg">Cancer LinReg<a class="anchor-link" href="#Cancer-LinReg">&#182;</a></h1><p>Now, we will fit a simple multi-linear regression to all of the food consumption inputs for each of the diseases. First, for cancer, our regression has an initial cross-validated</p>
+<h1 id="Cancer-LinReg">Cancer LinReg<a class="anchor-link" href="#Cancer-LinReg">&#182;</a></h1><p>Now, we will fit a simple multi-linear regression to all of the food consumption inputs for each of the diseases. First, for cancer, our regression has an initial cross-validated $R^2$ of <strong> PUT THE R^2 HERE</strong>.</p>
 
 </div>
 </div>
@@ -11880,16 +11881,31 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Diabetes-LinReg">Diabetes LinReg<a class="anchor-link" href="#Diabetes-LinReg">&#182;</a></h1>
+<p>To further examine the accuracy of this model, the map below displays the fractional difference of the model estimates as compared to the actual cancer data on a world map. As we can see, the vast majority of countries are colored a dark blue/ purple color, indicating they have a low fractional difference. Countries colored a brighter purple/pink color indicate an overestimate, while countries colored in a brighter blues indicate an underestimate.</p>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># PUT GRAPH HERE</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Cardiovascular-Diseases-LinReg">Cardiovascular Diseases LinReg<a class="anchor-link" href="#Cardiovascular-Diseases-LinReg">&#182;</a></h1>
+<h1 id="Diabetes-LinReg">Diabetes LinReg<a class="anchor-link" href="#Diabetes-LinReg">&#182;</a></h1><p>For diabetes, our regression has an initial cross-validated $R^2$ of <strong> PUT THE R^2 HERE</strong>.</p>
+
 </div>
 </div>
 </div>
@@ -11898,13 +11914,82 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">linreg</span> <span class="o">=</span> <span class="n">LinReg</span><span class="p">()</span>
+<span class="n">linreg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">y_df</span><span class="p">)</span>
+<span class="n">linreg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">y_df</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, we can examine a world map to see the fractional differences. Again, dark blue/purple colors indicate an accurate estimate,brighter purples/pinks indicate an overestimate, and brighter blues indicate an underestimate. We note that</p>
+<h3 id="NOTE-I&quot;M-NOT-SURE-ABOUT-THIS-BUT-JUST-WRITING-SOME-ANALYSIS">NOTE I"M NOT SURE ABOUT THIS BUT JUST WRITING SOME ANALYSIS<a class="anchor-link" href="#NOTE-I&quot;M-NOT-SURE-ABOUT-THIS-BUT-JUST-WRITING-SOME-ANALYSIS">&#182;</a></h3><p>this model has slightly worse performance than our cancer model, perhaps indicating that diabetes is less related to dietary intake than <strong>SSOME OTHER DISEASE</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Cardiovascular-Diseases-LinReg">Cardiovascular Diseases LinReg<a class="anchor-link" href="#Cardiovascular-Diseases-LinReg">&#182;</a></h1><p>For diabetes, our regression has an initial cross-validated $R^2$ of <strong> PUT THE R^2 HERE</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">linreg</span> <span class="o">=</span> <span class="n">LinReg</span><span class="p">()</span>
+<span class="n">linreg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">y_df</span><span class="p">)</span>
+<span class="n">linreg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">y_df</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-5-61629ea08014&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>linreg <span class="ansi-blue-fg">=</span> LinReg<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> linreg<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>x_df<span class="ansi-blue-fg">,</span> y_df<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> linreg<span class="ansi-blue-fg">.</span>score<span class="ansi-blue-fg">(</span>x_df<span class="ansi-blue-fg">,</span> y_df<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;LinReg&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, we can examine a world map to see the fractional differences. Dark blue/purple colors indicate an accurate estimate,brighter purples/pinks indicate an overestimate, and brighter blues indicate an underestimate. While this model appears to be fairly accurate for <em>THESE COUNTRIES</em>, it could be improved for <em>THESE</em>. This might be due to certain predictors, such as <em>SOME RANDOM PREDICTOR</em>, that is more heavily weighted for larger countries than for the country that is see</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
