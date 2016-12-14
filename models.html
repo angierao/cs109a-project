@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>models</title>
+<title>Models</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11771,7 +11771,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -11783,6 +11783,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">KFold</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> <span class="k">as</span> <span class="n">LinReg</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span> <span class="k">as</span> <span class="n">sk_split</span>
 <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="kn">as</span> <span class="nn">sm</span>
@@ -11797,16 +11798,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Read in initial dataframe</span>
-<span class="n">x_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/predictors_filled.csv&#39;</span><span class="p">)</span>
+<span class="n">x_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;predictors_filled_156.csv&#39;</span><span class="p">)</span>
 
 <span class="c1"># read in disease rates</span>
-<span class="n">diabetes_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/diabetes_df.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">cardio_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/cardio_df.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">cancer_df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/cancer_df.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">diabetes_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;diabetes_156.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">cardio_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;cardio_156.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">cancer_df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;cancer_156.csv&#39;</span><span class="p">,</span><span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11827,7 +11828,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Null Model Cancer</span>
@@ -11843,7 +11844,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11858,7 +11859,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Test Cancer.</span>
@@ -11873,11 +11874,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>3.3306690738754696e-16</pre>
+<pre>0.0</pre>
 </div>
 
 </div>
@@ -11898,7 +11899,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Fit Diabetes Null Model</span>
@@ -11914,7 +11915,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11929,7 +11930,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Test Diabetes.</span>
@@ -11937,6 +11938,22 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.0</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11952,7 +11969,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Test cardiovascular diseases</span>
@@ -11968,7 +11985,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11983,7 +12000,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Test cardiovascular diseases.</span>
@@ -11998,7 +12015,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12023,7 +12040,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">linreg</span> <span class="o">=</span> <span class="n">LinReg</span><span class="p">()</span>
@@ -12041,7 +12058,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training r^2: 0.858582674822
+<pre>Training r^2: 0.842393103733
 </pre>
 </div>
 </div>
@@ -12052,7 +12069,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Cross validated R-squared score</span>
@@ -12067,11 +12084,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[51]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>-16.502846796333834</pre>
+<pre>-30.410282842295079</pre>
 </div>
 
 </div>
@@ -12092,7 +12109,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># PUT GRAPH HERE</span>
@@ -12115,7 +12132,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">linreg</span> <span class="o">=</span> <span class="n">LinReg</span><span class="p">()</span>
@@ -12136,8 +12153,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training R^2 0.834368749536
-CV R^2 score: -4.55361320841
+<pre>Training R^2 0.807019987902
+CV R^2 score: -4.48569244044
 </pre>
 </div>
 </div>
@@ -12168,7 +12185,7 @@ CV R^2 score: -4.55361320841
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">linreg</span> <span class="o">=</span> <span class="n">LinReg</span><span class="p">()</span>
@@ -12187,8 +12204,8 @@ CV R^2 score: -4.55361320841
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training R^2 0.856203051095
-Cross-validated R^2 -6.02431649487
+<pre>Training R^2 0.850938184461
+Cross-validated R^2 -5.2779763269
 </pre>
 </div>
 </div>
@@ -12232,10 +12249,10 @@ Cross-validated R^2 -6.02431649487
 </thead>
 <tbody>
 <tr>
-<td>R^2</td>
-<td>sdf</td>
-<td>sdf</td>
-<td>sdf</td>
+<td>R^2 (Training)</td>
+<td>.856</td>
+<td>.834</td>
+<td>.856</td>
 </tr>
 </tbody>
 </table>
@@ -12252,15 +12269,9 @@ Using the LassoCV package in sklearn, we obtain the following cross-validated $R
 <tbody>
 <tr>
 <td>$r^2$ (Lasso)</td>
-<td>f</td>
-<td>f</td>
-<td>f</td>
-</tr>
-<tr>
-<td>$r^2$ (Naive)</td>
-<td>f</td>
-<td>f</td>
-<td>f</td>
+<td>.456</td>
+<td>.31</td>
+<td>.053</td>
 </tr>
 </tbody>
 </table>
@@ -12280,7 +12291,7 @@ Using the LassoCV package in sklearn, we obtain the following cross-validated $R
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">lasso_k_fold_r_squared</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">num_folds</span><span class="p">,</span> <span class="n">param_val</span><span class="p">):</span>
@@ -12335,14 +12346,14 @@ Using the LassoCV package in sklearn, we obtain the following cross-validated $R
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LassoCV</span>
 
 <span class="k">print</span> <span class="s2">&quot;LASSO&quot;</span>
-<span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">[</span><span class="o">.</span><span class="mo">001</span><span class="p">,</span> <span class="o">.</span><span class="mo">01</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">]:</span>
+<span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">[</span><span class="o">.</span><span class="mo">001</span><span class="p">,</span> <span class="o">.</span><span class="mo">01</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">.</span><span class="mi">4</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">]:</span>
     <span class="k">print</span> <span class="s2">&quot;cancer&quot;</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span> <span class="n">lasso_k_fold_r_squared</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span><span class="n">cancer_df</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">alpha</span><span class="p">)</span>
 </pre></div>
 
@@ -12357,16 +12368,33 @@ Using the LassoCV package in sklearn, we obtain the following cross-validated $R
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>LASSO
-cancer 0.001 -8.74966599085
-cancer 0.01 -2.96325751054
-cancer 0.1 -0.190699091902
-cancer 1 0.059000481265
-cancer 10 -0.0667064097657
-cancer 100 -0.0667064097657
+cancer 0.001 -10.0863952587
+cancer 0.01 -2.62319418962
+cancer 0.1 -0.189052791559
+cancer 0.4 0.15663394152
+cancer 0.5 0.13439828752
+cancer 0.6 0.117227909906
+cancer 1 0.0530720050382
+cancer 5 -0.0745935162681
+cancer 10 -0.0745935162681
+cancer 100 -0.0745935162681
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -12383,7 +12411,7 @@ cancer 100 -0.0667064097657
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;LASSO&quot;</span>
@@ -12403,21 +12431,66 @@ cancer 100 -0.0667064097657
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>LASSO
-cardio 0.001 -4.38550193519
-cardio 0.1 -0.123533778277
-cardio 0.5 0.425219743525
-cardio 0.8 0.456605362725
-cardio 0.9 0.459219427244
-cardio 1 0.45802637765
-cardio 2 0.410695165821
-cardio 5 0.0288024996148
-cardio 10 -0.0121108016136
-cardio 100 -0.0121108016136
-cardio 1000 -0.0121108016136
+cardio 0.001 -5.42791396765
+cardio 0.1 -0.111196584756
+cardio 0.5 0.415841480013
+cardio 0.8 0.451848911048
+cardio 0.9 0.455639379888
+cardio 1 0.456181146633
+cardio 2 0.404302118408
+cardio 5 0.0132238574549
+cardio 10 -0.010213535932
+cardio 100 -0.010213535932
+cardio 1000 -0.010213535932
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">cancer_df</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Lasso(alpha=1, copy_X=True, fit_intercept=True, max_iter=1000, normalize=True,
+   positive=False, precompute=False, random_state=None, selection=&#39;cyclic&#39;,
+   tol=0.0001, warm_start=False)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -12434,7 +12507,7 @@ cardio 1000 -0.0121108016136
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;LASSO&quot;</span>
@@ -12453,14 +12526,14 @@ cardio 1000 -0.0121108016136
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>LASSO
-diabetes 0.001 -5.54087100862
-diabetes 0.01 -1.35528362106
-diabetes 0.05 0.150816356828
-diabetes 0.1 0.296517146933
-diabetes 0.5 0.224356968877
-diabetes 1 0.040731917599
-diabetes 10 -0.0223645436324
-diabetes 100 -0.0223645436324
+diabetes 0.001 -11.0600616776
+diabetes 0.01 -7.15802252011
+diabetes 0.05 -2.82047154641
+diabetes 0.1 -1.89295319289
+diabetes 0.5 -0.634815280625
+diabetes 1 -0.151038370671
+diabetes 10 0.309595435793
+diabetes 100 0.243569859518
 </pre>
 </div>
 </div>
@@ -12476,13 +12549,31 @@ diabetes 100 -0.0223645436324
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Ridge">Ridge<a class="anchor-link" href="#Ridge">&#182;</a></h2><p>Again, in this section we'd like to try to use Ridge regression to improve the cross-validated $r^2$ for our model and reduce overfitting of the model.
 Below is a function we used to calculate the cross-validated r^2 for ridge regression over a number of folds for a certain parameter value.</p>
+<p>To summarize, we have:</p>
+<table>
+<thead><tr>
+<th></th>
+<th>Cardio</th>
+<th>Diabetes</th>
+<th>Cancer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r^2$ (Ridge)</td>
+<td>.424</td>
+<td>.323</td>
+<td>.168</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span>
@@ -12523,20 +12614,6 @@ Below is a function we used to calculate the cross-validated r^2 for ridge regre
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12550,7 +12627,7 @@ Below is a function we used to calculate the cross-validated r^2 for ridge regre
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;RIDGE&quot;</span>
@@ -12569,16 +12646,19 @@ Below is a function we used to calculate the cross-validated r^2 for ridge regre
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RIDGE
-cardio 0.001 -3.96732782949
-cardio 0.01 -2.04659444672
-cardio 0.1 -0.0743876496175
-cardio 0.9 0.415084979043
-cardio 1 0.420913047131
-cardio 1.1 0.425246636552
-cardio 5 0.373288437629
-cardio 10 0.285504207166
-cardio 11 0.272129846453
-cardio 100 0.0449116184953
+cardio 0.001 -4.9919143728
+cardio 0.01 -2.75443505612
+cardio 0.1 -0.175066648391
+cardio 0.9 0.404437744071
+cardio 1 0.410643001
+cardio 1.1 0.415244083252
+cardio 1.3 0.421038145156
+cardio 1.5 0.423729737401
+cardio 1.9 0.423597298657
+cardio 5 0.36475407367
+cardio 10 0.27837000173
+cardio 11 0.265254747482
+cardio 100 0.0444563936422
 </pre>
 </div>
 </div>
@@ -12599,7 +12679,7 @@ cardio 100 0.0449116184953
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[122]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;RIDGE&quot;</span>
@@ -12618,20 +12698,64 @@ cardio 100 0.0449116184953
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RIDGE
-diabetes 0.001 -5.5597290689
-diabetes 0.01 -2.50308003386
-diabetes 0.1 -0.259201378475
-diabetes 0.9 0.311280050791
-diabetes 1 0.316918281716
-diabetes 3 0.316487298488
-diabetes 5 0.289080099691
-diabetes 10 0.234159110602
-diabetes 100 0.0430740924706
-diabetes 1000 -0.0145201142658
+diabetes 0.001 -9.77735177572
+diabetes 0.01 -3.76622924788
+diabetes 0.1 -0.279553857695
+diabetes 0.9 0.314979301771
+diabetes 1 0.321214840769
+diabetes 3 0.325946173079
+diabetes 5 0.300072240351
+diabetes 10 0.246363686822
+diabetes 100 0.0540094335668
+diabetes 1000 -0.00498501391727
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span> <span class="n">diabetes_df</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[54]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Ridge(alpha=1, copy_X=True, fit_intercept=True, max_iter=None, normalize=True,
+   random_state=None, solver=&#39;auto&#39;, tol=0.001)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -12648,12 +12772,12 @@ diabetes 1000 -0.0145201142658
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[125]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;RIDGE&quot;</span>
 
-<span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">[</span><span class="o">.</span><span class="mo">001</span><span class="p">,</span> <span class="o">.</span><span class="mo">01</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]:</span>
+<span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">[</span><span class="o">.</span><span class="mo">001</span><span class="p">,</span> <span class="o">.</span><span class="mo">01</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]:</span>
     <span class="k">print</span> <span class="s2">&quot;cancer&quot;</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span> <span class="n">ridge_k_fold_r_squared</span><span class="p">(</span><span class="n">x_df</span><span class="p">,</span><span class="n">cancer_df</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">alpha</span><span class="p">)</span>
 </pre></div>
 
@@ -12668,19 +12792,47 @@ diabetes 1000 -0.0145201142658
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RIDGE
-cancer 0.001 -7.5846526988
-cancer 0.01 -3.04209158397
-cancer 0.1 -0.743910830295
-cancer 1 0.078166346437
-cancer 3 0.179617238894
-cancer 5 0.182894051905
-cancer 10 0.157128814375
-cancer 20 0.109819148041
-cancer 1000 -0.0589604088889
+cancer 0.001 -9.11931708715
+cancer 0.01 -3.21130503559
+cancer 0.1 -0.681543066623
+cancer 1 0.0574910468362
+cancer 3 0.162757999505
+cancer 4 0.168501040516
+cancer 5 0.168009123824
+cancer 6 0.164780179616
+cancer 10 0.144581726236
+cancer 20 0.0992315721652
+cancer 1000 -0.0668769303926
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -12700,7 +12852,7 @@ cancer 1000 -0.0589604088889
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
@@ -12754,7 +12906,7 @@ cancer 1000 -0.0589604088889
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]:</span>
@@ -12771,13 +12923,13 @@ cancer 1000 -0.0589604088889
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2 0.440138259697
-3 0.375936001262
-4 0.261607404615
-5 0.315558699673
-10 0.160293812685
-50 0.218906209133
-100 0.232385356672
+<pre>2 0.424335403226
+3 0.313078907323
+4 0.230103986075
+5 0.154881054117
+10 0.0746420574928
+50 0.217683941889
+100 0.0820025125761
 </pre>
 </div>
 </div>
@@ -12798,7 +12950,7 @@ cancer 1000 -0.0589604088889
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]:</span>
@@ -12815,13 +12967,13 @@ cancer 1000 -0.0589604088889
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2 0.157263311113
-3 0.0619619715891
-4 -0.0233804974236
-5 -0.0805395387135
-10 -0.260118795998
-50 -0.231097402221
-100 -0.257998909033
+<pre>2 0.135877261593
+3 0.0669070393589
+4 -0.0048575681988
+5 0.0545434405144
+10 -0.150080332407
+50 -0.299664889236
+100 -0.305172491679
 </pre>
 </div>
 </div>
@@ -12842,7 +12994,7 @@ cancer 1000 -0.0589604088889
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">100</span><span class="p">]:</span>
@@ -12859,20 +13011,59 @@ cancer 1000 -0.0589604088889
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2 -0.495027285839
-3 -0.382795469727
-5 -0.629291531556
-8 -0.584912517168
-9 -0.598224328667
-10 -0.503728749224
-20 -0.535395328141
-50 -0.566462003329
-70 -0.776112364787
-100 -0.381191888602
+<pre>2 -0.908504830182
+3 -0.914686106965
+5 -1.02371038451
+8 -1.17331433126
+9 -0.92569309602
+10 -1.11543087937
+20 -1.41288087569
+50 -1.3521432352
+70 -0.972645342176
+100 -1.15913214825
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
