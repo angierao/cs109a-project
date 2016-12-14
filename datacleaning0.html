@@ -11748,11 +11748,13 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[119]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11765,7 +11767,41 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="I.-Loading-and-Organizing-Data">I. Loading and Organizing Data<a class="anchor-link" href="#I.-Loading-and-Organizing-Data">&#182;</a></h1>
+<h1 id="I.-Loading-Data">I. Loading Data<a class="anchor-link" href="#I.-Loading-Data">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Read-in-Crop-Data">Read in Crop Data<a class="anchor-link" href="#Read-in-Crop-Data">&#182;</a></h2><p>After surveying the food data, we found that there were many more missing data points for countries and crops for the year 2012 compared to the the year 2000 (which is surprising because you'd think that more data would be available for recent years). As a result, we decided to focus on the data from the year 2000. Here, we first read in crop data for the year 2000.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># read in crops</span>
+<span class="n">allcrops_2000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/allcrops_2000.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Organize-Data-by-Crop">Organize Data by Crop<a class="anchor-link" href="#Organize-Data-by-Crop">&#182;</a></h2><p>We plan for the predictors of our model to be the consumption of each of the individual food items. Thus we find all of the unique crop names and extract all of the data for each crop from the original data frame. We store these new crop data frames in a list.</p>
+
 </div>
 </div>
 </div>
@@ -11774,9 +11810,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#read in crops</span>
-<span class="n">allcrops_2000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/allcrops_2000.csv&#39;</span><span class="p">)</span>
-<span class="c1"># names of all the crops</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># names of all the crops</span>
 <span class="n">crop_names</span> <span class="o">=</span> <span class="n">allcrops_2000</span><span class="p">[</span><span class="s1">&#39;ItemName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 
 <span class="c1"># remove nan</span>
@@ -11801,6 +11835,31 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Read-in-Livestock-Data">Read in Livestock Data<a class="anchor-link" href="#Read-in-Livestock-Data">&#182;</a></h2><p>We read in the livestock data for the year 2000, for reasons enumerated above.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Do the same as above, but for livestock</span>
+<span class="n">livestock_2000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/livestock_2000.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Organize-Data-by-Livestock">Organize Data by Livestock<a class="anchor-link" href="#Organize-Data-by-Livestock">&#182;</a></h2><p>We similarly organize the aggregate livestock data into individual data frames with the relevant data for each livestock item. The livestock data also included values for the grand total consumption as well as the population average, which we removed manually.</p>
 
 </div>
 </div>
@@ -11810,13 +11869,13 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Do the same as above, but for livestock</span>
-<span class="n">livestock_2000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/livestock_2000.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># list of livestock names</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># list of livestock names</span>
 <span class="n">livestock_names_all</span> <span class="o">=</span> <span class="n">livestock_2000</span><span class="p">[</span><span class="s1">&#39;ItemName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+
+<span class="c1"># remove nan and Population</span>
 <span class="n">livestock_names_all</span> <span class="o">=</span> <span class="n">livestock_names_all</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">livestock_names</span> <span class="o">=</span> <span class="p">[]</span>
+
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">livestock_names_all</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">name</span> <span class="o">!=</span> <span class="s1">&#39;Grand Total&#39;</span><span class="p">:</span>
         <span class="n">livestock_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
@@ -11835,6 +11894,15 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Read-in-Disease-Data">Read in Disease Data<a class="anchor-link" href="#Read-in-Disease-Data">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[94]:</div>
@@ -11842,85 +11910,10 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># read in disease rates</span>
 <span class="n">column_headers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="s2">&quot;Mortality&quot;</span><span class="p">,</span> <span class="s2">&quot;Mortality 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Mortality 3&quot;</span><span class="p">]</span>
+
 <span class="n">diabetes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/diabetes.csv&#39;</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_headers</span><span class="p">)</span>
 <span class="n">cardio</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/cardiovascular.csv&#39;</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_headers</span><span class="p">)</span>
 <span class="n">cancer</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/Cancer.csv&#39;</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_headers</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cardio_2012</span> <span class="o">=</span> <span class="n">cardio</span><span class="p">[(</span><span class="n">cardio</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;2012&quot;</span><span class="p">)]</span> 
-<span class="n">cardio_2000</span> <span class="o">=</span> <span class="n">cardio</span><span class="p">[(</span><span class="n">cardio</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;2000&quot;</span><span class="p">)]</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">diabetes_2012</span> <span class="o">=</span> <span class="n">diabetes</span><span class="p">[(</span><span class="n">diabetes</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;2012&#39;</span><span class="p">)]</span> 
-<span class="n">diabetes_2000</span> <span class="o">=</span> <span class="n">diabetes</span><span class="p">[(</span><span class="n">diabetes</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;2000&#39;</span><span class="p">)]</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cancer_2012</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">[(</span><span class="n">cancer</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39; 2012&#39;</span><span class="p">)]</span> 
-<span class="n">cancer_2000</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">[(</span><span class="n">cancer</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39; 2000&#39;</span><span class="p">)]</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">all_foods</span> <span class="o">=</span> <span class="n">all_crop_dfs</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># dictionary of all dataframes, crop and livestock</span>
-<span class="n">all_dfs</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">all_crop_dfs</span><span class="p">:</span>
-    <span class="n">crop_name</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ItemName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">all_dfs</span><span class="p">[</span><span class="n">crop_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>
-
-<span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">livestock_dfs</span><span class="p">:</span>
-    <span class="n">crop_name</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ItemName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">all_dfs</span><span class="p">[</span><span class="n">crop_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>
 </pre></div>
 
 </div>
@@ -11933,14 +11926,44 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some of the countries in both the crop/livestock data and the disease data, but under different names. The next three cells change the appropriate country names in the disease data to match those in the crop/livestock data. We elected to do this, instead of changing the crop/livestock data, because each country name only occurs once in each of the three disease data frames, while each name appears many times in the food data frames.</p>
+<h2 id="Extracting-Data-for-2000">Extracting Data for 2000<a class="anchor-link" href="#Extracting-Data-for-2000">&#182;</a></h2><p>There is significant food data missing for the year 2012 for many countries, as stated previously, so we decided to focus on data for the year 2000. We thus separate the disease data into years.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cardio_2012</span> <span class="o">=</span> <span class="n">cardio</span><span class="p">[(</span><span class="n">cardio</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;2012&quot;</span><span class="p">)]</span> 
+<span class="n">cardio_2000</span> <span class="o">=</span> <span class="n">cardio</span><span class="p">[(</span><span class="n">cardio</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;2000&quot;</span><span class="p">)]</span> 
+
+<span class="n">cancer_2012</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">[(</span><span class="n">cancer</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39; 2012&#39;</span><span class="p">)]</span> 
+<span class="n">cancer_2000</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">[(</span><span class="n">cancer</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39; 2000&#39;</span><span class="p">)]</span> 
+
+<span class="n">diabetes_2012</span> <span class="o">=</span> <span class="n">diabetes</span><span class="p">[(</span><span class="n">diabetes</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;2012&#39;</span><span class="p">)]</span> 
+<span class="n">diabetes_2000</span> <span class="o">=</span> <span class="n">diabetes</span><span class="p">[(</span><span class="n">diabetes</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;2000&#39;</span><span class="p">)]</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Syncing-Country-Names">Syncing Country Names<a class="anchor-link" href="#Syncing-Country-Names">&#182;</a></h2><p>Some of the countries in both the crop/livestock data and the disease data, but under different names. The next three cells change the appropriate country names in the disease data to match those in the crop/livestock data. We elected to do this, instead of changing the crop/livestock data, because each country name only occurs once in each of the three disease data frames, while each name appears many times in the food data frames.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cancer_2000</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
@@ -11963,47 +11986,10 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:12: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:6: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:14: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:8: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:10: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[125]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cardio_2000</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
@@ -12026,47 +12012,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:12: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:6: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:14: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:8: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:10: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">diabetes_2000</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
@@ -12089,50 +12038,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:12: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:6: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:14: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:8: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:10: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-/Users/angierao/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Looking-at-missing-data">Looking at missing data<a class="anchor-link" href="#Looking-at-missing-data">&#182;</a></h1>
+<h1 id="II.-Organizing-Data">II. Organizing Data<a class="anchor-link" href="#II.-Organizing-Data">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -12151,12 +12063,24 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In general, our naming convention is to add a capital L to the end of a file name that corresponds to livestock.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="prompt input_prompt">In&nbsp;[129]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/allwregions_92_00.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#df = pd.read_csv(&#39;datasets/allwregions_92_00.csv&#39;)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/noregions_92_00.csv&#39;</span><span class="p">)</span>
+<span class="n">dfL</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/noregionsL_92_00.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12182,7 +12106,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Creates-dictionary-where-each-key-is-a-crop-whose-value-is-a-dictionary-with-countries-as-keys-and-values-as-the-years-present-in-the-data">Creates dictionary where each key is a crop whose value is a dictionary with countries as keys and values as the years present in the data<a class="anchor-link" href="#Creates-dictionary-where-each-key-is-a-crop-whose-value-is-a-dictionary-with-countries-as-keys-and-values-as-the-years-present-in-the-data">&#182;</a></h3>
+<h2 id="Surveying-missing-data">Surveying missing data<a class="anchor-link" href="#Surveying-missing-data">&#182;</a></h2><p>In order to make it easier to access data for a specific crop predictor for a certain country, we decided to organize the data in the dataframe as a dictionary of dictionaries. Otherwise, we would have to iterate through 90,000+ rows of data every time we wanted to find the consumption of Wheat products in Turkmenistan, for example. Not only is this inefficient, it can take over half an hour to pull the data for just one predictor (personal experience, unfortunately).</p>
+<p>We created a dictionary where each key is a crop, whose value is a dictionary, with countries as keys and values as the years present in the data for that (country, crop) pair. This data also helped us get an idea of how much data was missing for each country and crop.</p>
+<p>We then did the same thing for livestock.</p>
+
 </div>
 </div>
 </div>
@@ -12192,7 +12119,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">all_crops</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-<span class="c1">#crop_countries = set()</span>
+
 <span class="n">cropdata</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">crop</span> <span class="ow">in</span> <span class="n">all_crops</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
@@ -12217,27 +12144,29 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[130]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">cropdata</span><span class="p">[</span><span class="s1">&#39;Molasses&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">all_ls</span> <span class="o">=</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+
+<span class="n">lsdata</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">ls</span> <span class="ow">in</span> <span class="n">all_ls</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">country</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">cancer_lands</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">country</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">ls</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="n">lsdata</span><span class="p">[</span><span class="n">ls</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>156
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12247,7 +12176,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Next-2-cells:-Creates-a-dictionary-with-countries-as-keys-and-values-as-the-corresponding-region">Next 2 cells: Creates a dictionary with countries as keys and values as the corresponding region<a class="anchor-link" href="#Next-2-cells:-Creates-a-dictionary-with-countries-as-keys-and-values-as-the-corresponding-region">&#182;</a></h3>
+<h2 id="Introducing-Regions">Introducing Regions<a class="anchor-link" href="#Introducing-Regions">&#182;</a></h2><p>As mentioned previously, the data we used from the Food and Agriculture Organization (FAO) of the UN had a lot of missing values. To fill in the missing values, we felt that KNN would not be appropriate, as each country has its own food traditions, and it's not culturally sensitive to assume that a country's consumption of a certain crop can be deduced by countries that consume other crops similarly. We also considered using countries geographically bordering a certain country to fill in missing values. However, we realized that geographical similarity does not imply cultural similarity.</p>
+<p>Our final solution was to use the regional data provided by the FAO. For example, the FAO tells us the Wheat consumption in South Asia, so if there are any countries in South Asia that are missing Wheat consumption, we would fill in the corresponding value for South Asia. This works out because we are using the consumption per capita values.</p>
+<p>In order to make it easy to figure out which region to pull data from for each country, we created a dictionary with countries as keys and values as the corresponding country's region.</p>
+
 </div>
 </div>
 </div>
@@ -12303,6 +12235,15 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Loading-and-Organizing-Region-Data">Loading and Organizing Region Data<a class="anchor-link" href="#Loading-and-Organizing-Region-Data">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[108]:</div>
@@ -12316,12 +12257,26 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">regions_dfL</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/onlyregionsL_92_00.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Creates-a-dictionary-with-the-regions-as-keys-and-the-values-as-dictionaries-with-crops-as-keys-and-lists-of-(year,-value)-tuples-as-values">Creates a dictionary with the regions as keys and the values as dictionaries with crops as keys and lists of (year, value) tuples as values<a class="anchor-link" href="#Creates-a-dictionary-with-the-regions-as-keys-and-the-values-as-dictionaries-with-crops-as-keys-and-lists-of-(year,-value)-tuples-as-values">&#182;</a></h3>
+<h3 id="Creating-a-Dictionary-of-Region-Data">Creating a Dictionary of Region Data<a class="anchor-link" href="#Creating-a-Dictionary-of-Region-Data">&#182;</a></h3><p>Yup, we're going to organize this data into a dictionary too. In order to make region data easy to access, we created a dictionary with the regions as keys and the values as dictionaries, with crops as keys and lists of (year, consumption value) pairs as values, and did the same for livestock.</p>
+
 </div>
 </div>
 </div>
@@ -12352,90 +12307,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">regions_dfL</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/onlyregionsL_92_00.csv&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dfL</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/noregionsL_92_00.csv&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">all_ls</span> <span class="o">=</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Same-thing-as-cropdata-but-with-livestock">Same thing as cropdata but with livestock<a class="anchor-link" href="#Same-thing-as-cropdata-but-with-livestock">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">lsdata</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">ls</span> <span class="ow">in</span> <span class="n">all_ls</span><span class="p">:</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">country</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
-        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">cancer_lands</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">country</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">ls</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                    <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">data</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
-    <span class="n">lsdata</span><span class="p">[</span><span class="n">ls</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Same-thing-as-regiondata-but-for-livestock">Same thing as regiondata but for livestock<a class="anchor-link" href="#Same-thing-as-regiondata-but-for-livestock">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[113]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -12459,25 +12330,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/noregions_92_00.csv&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Functions-to-extract-values-from-regiondata">Functions to extract values from regiondata<a class="anchor-link" href="#Functions-to-extract-values-from-regiondata">&#182;</a></h3>
+<h3 id="Functions-to-extract-values-from-regiondata">Functions to extract values from regiondata<a class="anchor-link" href="#Functions-to-extract-values-from-regiondata">&#182;</a></h3><p>These functions help us extract data from our dictionaries regiondata and regiondataL for a given crop/livestock item, region, and year.</p>
+
 </div>
 </div>
 </div>
@@ -12515,7 +12374,8 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Do-not-re-run-these-cell">Do not re run these cell<a class="anchor-link" href="#Do-not-re-run-these-cell">&#182;</a></h1><h3 id="They-take-awhile-to-run">They take awhile to run<a class="anchor-link" href="#They-take-awhile-to-run">&#182;</a></h3><h3 id="Filling-in-the-data">Filling in the data<a class="anchor-link" href="#Filling-in-the-data">&#182;</a></h3>
+<h1 id="Missing-Data-Imputation">Missing Data Imputation<a class="anchor-link" href="#Missing-Data-Imputation">&#182;</a></h1><p>After surveying the missing data using the dictionaries that we built, we realized that, for any (country, crop) pair, there were only four possibilities for the years of data that exist for that pair: 1) all nine years exist, 2) all but 1992 exist, 3) only 2000 exists, and 4) no years exist. We took advantage of this function when filling in missing values. For each case, we used our getvalue() and getvalueL() functions accordingly to retrieve the appropriate regional value. We then filled in the appropriate data for the rest of the columns and appended the row to the end of our original data frame.</p>
+
 </div>
 </div>
 </div>
@@ -12529,7 +12389,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="n">domain</span> <span class="o">=</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">element</span> <span class="o">=</span> <span class="n">regions_dfL</span><span class="p">[</span><span class="s1">&#39;Element&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">unit</span> <span class="o">=</span> <span class="n">dfL</span><span class="p">[</span><span class="s1">&#39;Unit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="k">for</span> <span class="n">ls</span> <span class="ow">in</span> <span class="n">lsdata</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">lsdata</span><span class="p">[</span><span class="n">ls</span><span class="p">]:</span>
         <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -12537,7 +12397,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
             <span class="k">continue</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lsdata</span><span class="p">[</span><span class="n">ls</span><span class="p">][</span><span class="n">country</span><span class="p">])</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
             <span class="n">value</span> <span class="o">=</span> <span class="n">getvalueL</span><span class="p">(</span><span class="n">country_dictionary</span><span class="p">[</span><span class="n">country</span><span class="p">],</span> <span class="n">ls</span><span class="p">,</span> <span class="mi">1992</span><span class="p">)</span>
-            <span class="n">dfL</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">domain</span><span class="p">,</span> <span class="n">country</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">ls</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">value</span><span class="p">]</span>
+            <span class="n">dfL</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">end</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">domain</span><span class="p">,</span> <span class="n">country</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">ls</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">value</span><span class="p">]</span>
             <span class="n">end</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lsdata</span><span class="p">[</span><span class="n">ls</span><span class="p">][</span><span class="n">country</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1992</span><span class="p">,</span> <span class="mi">2000</span><span class="p">):</span>
@@ -12580,7 +12440,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="n">domain</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">element</span> <span class="o">=</span> <span class="n">regions_df</span><span class="p">[</span><span class="s1">&#39;Element&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">unit</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Unit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="k">for</span> <span class="n">crop</span> <span class="ow">in</span> <span class="n">cropdata</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">cropdata</span><span class="p">[</span><span class="n">crop</span><span class="p">]:</span>
         <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -12626,7 +12486,8 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Creating-a-dictionary-with-food-names-as-keys-and-corresponding-df-as-values">Creating a dictionary with food names as keys and corresponding df as values<a class="anchor-link" href="#Creating-a-dictionary-with-food-names-as-keys-and-corresponding-df-as-values">&#182;</a></h3>
+<p>Below we created dictionaries with crop/livestock items as keys and their corresponding data frames (with data only for the key) as values.</p>
+
 </div>
 </div>
 </div>
@@ -12642,19 +12503,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="k">for</span> <span class="n">crop</span> <span class="ow">in</span> <span class="n">crop_names</span><span class="p">:</span>
     <span class="n">crop_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Item&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">crop</span><span class="p">)]</span>
     <span class="n">all_food_dfs</span><span class="p">[</span><span class="n">crop</span><span class="p">]</span> <span class="o">=</span> <span class="n">crop_df</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
 </pre></div>
 
 </div>
@@ -12700,6 +12548,16 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dictionary with countries as keys and dictionaries as values, with food names as keys and (year, consumption value) pairs as values, updated to include our filled in data points.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
@@ -12725,6 +12583,16 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Averaged data across all years from 1992-2000, as generally diets from many yaers contribute to diabetes, cancer, and cardiovascular disease.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -12753,16 +12621,22 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
                 <span class="n">avg</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">total</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
                 <span class="n">data</span><span class="p">[</span><span class="n">crop</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg</span>
     <span class="n">predictors</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
-        
-        
-        
-            
 </pre></div>
 
 </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For each country, we accumulated the correct values for all of the predictors and compiled all of the predictors for 156 countries into a data frame</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -12777,10 +12651,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
     <span class="n">x_vals</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">crop</span> <span class="ow">in</span> <span class="n">predictors</span><span class="p">[</span><span class="n">country</span><span class="p">]:</span>
         <span class="n">x_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">predictors</span><span class="p">[</span><span class="n">country</span><span class="p">][</span><span class="n">crop</span><span class="p">])</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">103</span><span class="p">:</span>
-        <span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
-        <span class="k">print</span> <span class="s1">&#39;x_vals&#39;</span>
-        <span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
     <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
 
 <span class="n">x_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">cols</span><span class="p">)</span>
@@ -12819,9 +12689,19 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For each of the three diseases below, we built a corresponding data frame with the y-values corresponding to the x-values in the data frame of predictors, for each corresponding country in the correct order. We then wrote this data to csv files so that we would not have to run this code over and over again.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[134]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">cancer</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12832,8 +12712,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
             
 <span class="n">cancer_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">cancer</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cancer Mortality Rate&#39;</span><span class="p">])</span>
 <span class="k">print</span> <span class="n">cancer_df</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">cancer_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-            
 </pre></div>
 
 </div>
@@ -12849,45 +12727,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <pre>(156, 1)
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[80]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Cancer Mortality Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>142.1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>104.9</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>154.6</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>110.9</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>100.7</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -12909,7 +12748,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[133]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diabetes</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12920,8 +12759,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
             
 <span class="n">diabetes_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">diabetes</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Diabetes Mortality Rate&#39;</span><span class="p">])</span>
 <span class="k">print</span> <span class="n">diabetes_df</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">diabetes_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-            
 </pre></div>
 
 </div>
@@ -12937,45 +12774,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <pre>(156, 1)
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[82]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Diabetes Mortality Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>14.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>19.8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>15.9</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>28.9</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -12997,7 +12795,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[132]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">cardio</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13007,9 +12805,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
             <span class="n">cardio</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cardio_2000</span><span class="p">[</span><span class="s1">&#39;Mortality&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
             
 <span class="n">cardio_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">cardio</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cardio Mortality Rate&#39;</span><span class="p">])</span>
-<span class="k">print</span> <span class="n">cardio_df</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">cardio_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-            
+<span class="k">print</span> <span class="n">cardio_df</span><span class="o">.</span><span class="n">shape</span>      
 </pre></div>
 
 </div>
@@ -13025,45 +12821,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <pre>(156, 1)
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[85]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Cardio Mortality Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>150.8</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>724.4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>373.9</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>222.5</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>180.4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
 </div>
 
 </div>
