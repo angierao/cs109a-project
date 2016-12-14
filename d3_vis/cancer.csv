@@ -1,102 +1,102 @@
 id,value
-positive.Ricebran Oil,259.622194
-negative.Plantains,2.83643735
-"positive.Sugar, Raw Equivalent",36.2074517
-positive.Alc. Beverages,32.4950393
-positive.Roots & Tubers,38.3439089
-positive.Olives,12.8178033
-positive.Cloves,451.037763
-positive.Raw Animal Fats,77.4756915
-positive.Millet,0.0936269777
-negative.Coconuts,12.1100979
-negative.Eggs,15.3853443
-negative.Vegetables,5.43087951
-negative.Sesame seeds,114.389605
-positive.Marine Fish,37.0398425
-negative.Wine,2.96470785
-negative.Pigmeat,9.32949464
-negative.Apples,6.41711821
-negative.Rape and Mustard Oil,4.79716527
-"negative.Fish, Liver Oil",613.92163
-positive.Maize,1.51822621
-negative.Sweeteners,36.9113138
-"positive.Fish, Body Oil",99.3549219
-negative.Honey,120.985128
-positive.Demersal Fish,3.49920815
-negative.Groundnuts Shelled,132.741726
-negative.Barley,2.75468393
-negative.Maize Germ Oil,1.22397482
-negative.Beer,5.60413266
-positive.Groundnut Oil,10.2514982
-negative.Sugar non-centrifugal,23.3227016
-negative.Pineapples,5.56399735
-negative.Pulses,9.39555199
-positive.Sugar (Raw Equivalent),860.366706
-positive.Meat,22.1103405
-positive.Molasses,308.237011
-positive.Pimento,38.0934817
-negative.Palm Oil,14.777303
-negative.Oilcrops,164.219001
-negative.Dates,7.56792456
-negative.Oats,100.31807
-positive.Soybeans,121.716967
-positive.Freshwater Fish,11.6801603
-negative.Beans,5.72781859
-positive.Sugar beet,95.8600721
-negative.Cephalopods,98.0433727
-positive.Mutton & Goat Meat,23.0449176
-negative.Sesameseed Oil,88.7531016
-positive.Grapes,39.0353142
-positive.Beverages (Fermented),0.026250187
-positive.Bovine Meat,2.12196741
-negative.Molluscs,2.73827666
-positive.Aquatic Plants,94.8350793
-negative.Cottonseed Oil,11.5437768
-negative.Onions,11.5600921
-positive.Coffee,64.6393372
-negative.Roots,10.02897
-negative.Sorghum,0.601467816
-positive.Meat Meal,1.09906217e-08
-"negative.Sugar, Refined Equiv",974.342722
-negative.Infant food,182.087765
-positive.Whey,6.70469482
-positive.Groundnuts Inshell,125.964723
-positive.Sunf seed,469.281551
-negative.Cereals,20.266866
-positive.Pepper,672.937069
-negative.Crustaceans,63.8902445
-negative.Peas,46.3172348
-"positive.Milk, Whole",0.938115471
-positive.Nuts,6.71482869
-positive.Cocoa Beans,71.0856988
-negative.Wheat,2.37821876
-negative.Cassava,11.5358004
-positive.Sugar cane,5.20905762
-negative.Cheese,14.8476549
-positive.Aquatic Animals,516.232396
-positive.Sunflowerseed Oil,13.3493417
-negative.Offals,9.17582794
-positive.Palmkernel Oil,75.7181214
-positive.Cream,12.8918905
-positive.Potatoes,0.371086341
-negative.Fruits,12.9005147
-negative.Yams,8.56290263
-positive.Citrus,21.3733012
-"positive.Lemons, Limes",26.8283192
-positive.Poultry Meat,9.37588209
-positive.Tea,15.6774962
-positive.Soybean Oil,7.13841564
-positive.Grapefruit,5.34888587
-positive.Rye,5.8015293
-positive.Olive Oil,47.8579541
-positive.Coconut Oil,115.177463
-negative.Milk,0.0621961051
-positive.Tomatoes,2.38934805
-positive.Oilcrops Oil,83.5755652
-negative.Pelagic Fish,5.78897766
-"positive.Butter, Ghee",69.5701414
-positive.Bananas,3.89785507
-negative.Spices,38.0287046
-"positive.Meat, Aquatic Mammals",4.54747351e-12
-negative.Sweet potatoes,1.08410911
-"negative.Oranges, Mandarines",5.61968996
+positive.Ricebran Oil,41.36776
+negative.Plantains,0.0291179338
+"negative.Sugar, Raw Equivalent",0.0537826296
+positive.Alc. Beverages,4.64364894
+positive.Roots & Tubers,0.137610026
+positive.Olives,0.245133866
+positive.Cloves,75.2817758
+positive.Raw Animal Fats,5.34972689
+negative.Millet,0.53097751
+positive.Coconuts,0.0103917172
+positive.Eggs,1.11089918
+positive.Vegetables,0.116998781
+negative.Sesame seeds,5.84415926
+positive.Marine Fish,0.982469051
+positive.Wine,0.332838146
+positive.Pigmeat,0.513960672
+positive.Apples,1.0960461
+negative.Rape and Mustard Oil,0.143470776
+"negative.Fish, Liver Oil",43.3161856
+positive.Maize,0.0739054569
+positive.Sweeteners,0.376490582
+"positive.Fish, Body Oil",10.6986186
+negative.Honey,0.327348336
+negative.Demersal Fish,0.27148945
+negative.Groundnuts Shelled,0.787671397
+negative.Barley,0.590336157
+positive.Maize Germ Oil,3.4654907
+positive.Beer,0.159755752
+negative.Groundnut Oil,6.12511845
+negative.Sugar non-centrifugal,0.487991182
+negative.Pineapples,0.220475322
+negative.Pulses,2.81147653
+negative.Sugar (Raw Equivalent),0.0367462879
+positive.Meat,3.7957315
+positive.Molasses,32.0312413
+positive.Pimento,1.87840206
+negative.Palm Oil,4.19084374
+negative.Oilcrops,22.8995294
+negative.Dates,1.54636952
+negative.Oats,0.284513244
+positive.Soybeans,5.0726741
+negative.Freshwater Fish,1.33831169
+positive.Beans,0.778310395
+negative.Sugar beet,35.3145735
+negative.Cephalopods,0.749671196
+positive.Mutton & Goat Meat,2.32555356
+negative.Sesameseed Oil,9.00522375
+positive.Grapes,1.05750503
+positive.Beverages (Fermented),0.222604686
+positive.Bovine Meat,0.801740003
+positive.Molluscs,0.0885285593
+positive.Aquatic Plants,3.88368838
+negative.Cottonseed Oil,3.55614351
+negative.Onions,0.540809268
+positive.Coffee,0.396311294
+negative.Roots,0.337623744
+negative.Sorghum,0.768839151
+negative.Meat Meal,0.0
+"negative.Sugar, Refined Equiv",0.0382957284
+negative.Infant food,11.0617475
+positive.Whey,0.319594037
+negative.Groundnuts Inshell,0.470572243
+positive.Sunf seed,59.3305152
+negative.Cereals,1.58849161
+negative.Pepper,14.2245099
+negative.Crustaceans,0.877613633
+positive.Peas,8.1406315
+"positive.Milk, Whole",0.0910215942
+negative.Nuts,0.104563581
+positive.Cocoa Beans,5.99217795
+positive.Wheat,0.0659169905
+negative.Cassava,0.106578439
+negative.Sugar cane,1.07970877
+positive.Cheese,0.996159221
+positive.Aquatic Animals,48.4785115
+positive.Sunflowerseed Oil,0.909969677
+positive.Offals,4.18777704
+negative.Palmkernel Oil,2.57945283
+positive.Cream,3.93080965
+positive.Potatoes,0.355145546
+negative.Fruits,0.286838348
+negative.Yams,0.18601339
+negative.Citrus,0.39846927
+"negative.Lemons, Limes",0.227873087
+positive.Poultry Meat,0.0421138436
+negative.Tea,0.223396226
+negative.Soybean Oil,1.61751953
+negative.Grapefruit,0.0038887745
+positive.Rye,0.826140493
+negative.Olive Oil,1.80112245
+positive.Coconut Oil,1.80128986
+positive.Milk,0.0493654613
+negative.Tomatoes,0.11995416
+negative.Oilcrops Oil,5.75346154
+negative.Pelagic Fish,0.326255577
+"positive.Butter, Ghee",2.54403175
+negative.Bananas,0.188440719
+negative.Spices,19.7321885
+"negative.Meat, Aquatic Mammals",0.0
+positive.Sweet potatoes,0.463441328
+"negative.Oranges, Mandarines",0.133950315
