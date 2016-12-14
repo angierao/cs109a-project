@@ -86,7 +86,7 @@
 
   <div class="row">
     <div class="col-md-9 col-md-offset-1">
-      <p>To visualize the impact of certain food predictors, a bubble chart was generated with the radius of the circle porportional to the size of the coefficient used in the linear regression prediction model. The red and blue colors correspond respectively to positive and negative coefficients.  From the data below for cancer mortality rates, there is a strong mix of predictors that influence disease mortality in both directions. 
+      <p>To visualize the impact of certain food predictors, a bubble chart was generated with the radius of the circle porportional to the size of the coefficient used in the linear regression prediction model. The red and blue colors correspond respectively to positive and negative coefficients.  From the data below for cancer mortality rates, there is a strong mix of predictors that influence disease mortality in both directions. <br>
       <img src="http://i.imgur.com/Fukj4nY.png" width="300">
       </p>
     </div>
