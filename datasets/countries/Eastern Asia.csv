@@ -1,0 +1,25 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,96,"China, Hong Kong SAR",645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,96,"China, Hong Kong SAR",645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,34.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,96,"China, Hong Kong SAR",645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,91.94,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,128,"China, Macao SAR",645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.1,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,128,"China, Macao SAR",645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.48,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,128,"China, Macao SAR",645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,88.33,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,41,"China, mainland",645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,41,"China, mainland",645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.3,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,41,"China, mainland",645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,217.57,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,214,"China, Taiwan Province of",645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.04,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,214,"China, Taiwan Province of",645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,58.22,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,214,"China, Taiwan Province of",645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,126.4,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,116,Democratic People's Republic of Korea,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.07,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,116,Democratic People's Republic of Korea,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,27.5,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,116,Democratic People's Republic of Korea,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,142.61,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,110,Japan,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.49,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,110,Japan,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,10.95,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,110,Japan,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,92.23,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,141,Mongolia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.18,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,141,Mongolia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,3.7,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,141,Mongolia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,16.24,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,117,Republic of Korea,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.93,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,117,Republic of Korea,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,23.09,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,117,Republic of Korea,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,211.86,Fc,Calculated data

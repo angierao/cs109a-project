@@ -1,0 +1,43 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,1,Armenia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,1,Armenia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,31.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,1,Armenia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,71.41,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,52,Azerbaijan,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,52,Azerbaijan,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,31.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,52,Azerbaijan,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,47.05,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,50,Cyprus,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.57,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,50,Cyprus,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.97,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,50,Cyprus,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,87.09,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,73,Georgia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,73,Georgia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,23.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,73,Georgia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,46.7,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,103,Iraq,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,103,Iraq,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,5.4,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,103,Iraq,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,88.44,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,105,Israel,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,3.53,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,105,Israel,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,42.15,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,105,Israel,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,163.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,112,Jordan,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.91,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,112,Jordan,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,8.56,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,112,Jordan,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,63.3,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,118,Kuwait,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.57,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,118,Kuwait,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,36.63,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,118,Kuwait,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,131.47,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,121,Lebanon,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,5.03,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,121,Lebanon,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,53.47,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,121,Lebanon,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,143.56,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,221,Oman,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.45,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,221,Oman,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,21.12,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,221,Oman,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,100.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,194,Saudi Arabia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,194,Saudi Arabia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,194,Saudi Arabia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,56.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,223,Turkey,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.27,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,223,Turkey,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,26.37,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,223,Turkey,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,137.62,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,225,United Arab Emirates,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.72,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,225,United Arab Emirates,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,19.34,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,225,United Arab Emirates,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,163.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,249,Yemen,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.46,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,249,Yemen,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,10.39,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,249,Yemen,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,14.22,Fc,Calculated data

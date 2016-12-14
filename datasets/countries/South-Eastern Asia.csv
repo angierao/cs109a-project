@@ -1,0 +1,31 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,26,Brunei Darussalam,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.45,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,26,Brunei Darussalam,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,45.42,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,26,Brunei Darussalam,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,64.61,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,115,Cambodia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,115,Cambodia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,6.94,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,115,Cambodia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,37.74,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,101,Indonesia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.89,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,101,Indonesia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.35,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,101,Indonesia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,25.69,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,120,Lao People's Democratic Republic,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.28,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,120,Lao People's Democratic Republic,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,8.57,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,120,Lao People's Democratic Republic,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,111.61,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,131,Malaysia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.78,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,131,Malaysia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.61,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,131,Malaysia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,24.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,28,Myanmar,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.11,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,28,Myanmar,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.63,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,28,Myanmar,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,53.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,171,Philippines,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.53,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,171,Philippines,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,48.64,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,171,Philippines,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,58.56,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,216,Thailand,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.14,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,216,Thailand,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,64.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,216,Thailand,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,45.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,176,Timor-Leste,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.13,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,176,Timor-Leste,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,15.18,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,176,Timor-Leste,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,28.83,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,237,Viet Nam,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,237,Viet Nam,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,27.65,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,237,Viet Nam,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,69.53,Fc,Calculated data

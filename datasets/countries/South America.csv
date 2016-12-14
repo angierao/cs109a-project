@@ -1,0 +1,37 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,9,Argentina,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.02,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,9,Argentina,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.69,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,9,Argentina,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,39.7,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,19,Bolivia (Plurinational State of),645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.8,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,19,Bolivia (Plurinational State of),645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,11.51,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,19,Bolivia (Plurinational State of),645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,40.1,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,21,Brazil,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.87,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,21,Brazil,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,19.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,21,Brazil,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,16.42,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,40,Chile,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.59,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,40,Chile,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.82,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,40,Chile,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,57.67,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,44,Colombia,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.21,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,44,Colombia,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,33.58,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,44,Colombia,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,14.58,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,58,Ecuador,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,58,Ecuador,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,24.08,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,58,Ecuador,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,17.2,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,91,Guyana,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.15,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,91,Guyana,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,16.29,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,91,Guyana,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,82.15,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,169,Paraguay,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.73,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,169,Paraguay,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,14.94,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,169,Paraguay,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,41.38,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,170,Peru,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.78,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,170,Peru,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.26,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,170,Peru,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,31.19,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,207,Suriname,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.27,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,207,Suriname,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,6.74,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,207,Suriname,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,52.13,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,234,Uruguay,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.88,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,234,Uruguay,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,20.95,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,234,Uruguay,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,34.39,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,236,Venezuela (Bolivarian Republic of),645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,2.76,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,236,Venezuela (Bolivarian Republic of),645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.12,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,236,Venezuela (Bolivarian Republic of),645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,27.3,Fc,Calculated data

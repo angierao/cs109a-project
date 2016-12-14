@@ -1,0 +1,4 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,83,Kiribati,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,4.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,83,Kiribati,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,83,Kiribati,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,61.96,Fc,Calculated data

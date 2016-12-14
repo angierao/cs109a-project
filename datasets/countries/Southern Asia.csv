@@ -1,0 +1,25 @@
+Domain Code,Domain,Country Code,Country,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+CC,Food Supply - Crops Primary Equivalent,2,Afghanistan,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,2,Afghanistan,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.87,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,2,Afghanistan,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,29.34,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,16,Bangladesh,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,16,Bangladesh,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,4.45,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,16,Bangladesh,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,10.69,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,100,India,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,100,India,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,17.84,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,100,India,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,53.9,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,102,Iran (Islamic Republic of),645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,102,Iran (Islamic Republic of),645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,40.5,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,102,Iran (Islamic Republic of),645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,93.27,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,132,Maldives,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,1.5,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,132,Maldives,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,18.82,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,132,Maldives,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,36.94,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,149,Nepal,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.01,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,149,Nepal,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,25.96,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,149,Nepal,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,59.06,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,165,Pakistan,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.0,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,165,Pakistan,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,13.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,165,Pakistan,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,19.88,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,38,Sri Lanka,645,Food supply quantity (kg/capita/yr),2630,Coffee and products,2000,2000,kg,0.53,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,38,Sri Lanka,645,Food supply quantity (kg/capita/yr),2625,"Fruits, Other",2000,2000,kg,5.54,Fc,Calculated data
+CC,Food Supply - Crops Primary Equivalent,38,Sri Lanka,645,Food supply quantity (kg/capita/yr),2605,"Vegetables, Other",2000,2000,kg,21.47,Fc,Calculated data
