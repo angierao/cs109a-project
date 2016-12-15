@@ -68,11 +68,11 @@
 
   <div class="row">
     <div class="col-md-9 col-md-offset-1">
-      <p>Three different models were tested:      </p>
+      <p>Four different models were tested:      </p>
       <ol>
           <li> Naive Linear Regression Model</li>
-          <li> Stepwise Linear Regression </li>
-          <li> Linear Regression with LASSO or Ridge for Variable Selection </li>
+          <li> Linear Regression with LASSO for Variable Selection </li>
+          <li> Linear Regression with Ridge for Variable Selection </li>
           <li> Regression Tree for Advanced Analysis </li>
        </ol>
     </div>
@@ -86,8 +86,8 @@
 
   <div class="row">
     <div class="col-md-9 col-md-offset-1">
-      <p>To visualize the impact of certain food predictors, a bubble chart was generated with the radius of the circle porportional to the size of the coefficient used in the linear regression prediction model. The red and blue colors correspond respectively to positive and negative coefficients.  From the data below for cancer mortality rates, there is a strong mix of predictors that influence disease mortality in both directions. <br>
-      <img src="http://i.imgur.com/Fukj4nY.png" width="300">
+      <p>To visualize the impact of certain food predictors, a bubble chart was generated with the radius of the circle porportional to the size of the coefficient used in the linear regression prediction model. The red and blue colors correspond respectively to positive and negative coefficients.  From the data below for diabetes mortality rates, there is a strong mix of predictors that influence disease mortality in both directions. <br>
+      <img src="http://i.imgur.com/NzeMTU5.png" width="300">
       </p>
     </div>
   </div>
@@ -101,8 +101,8 @@
   <div class="row">
     <div class="col-md-9 col-md-offset-1">
       <p>The predicted disease mortality rates from our model were then visualized in a world map format to examine for geographic trends. The above graph shows estimated cardiovascular disease mortality per 100,000 individuals while the below map shows the actual cardiovascular disease mortality rates. A dark blue indicates a higher mortality rate while a lighter blue indicates that the disease is not as prevelant in the country. There are clear similiaries between the models, supporting the validity of our approaches. However there are also noticeable differences that suggest that the nuances of the country were oversimplified in the model. </p>
-      <img src="http://i.imgur.com/WYTVd8X.png">
-      <img src="http://i.imgur.com/UfeU9Su.png">
+      <img src="http://i.imgur.com/4qmNdje.png">
+      <img src="http://i.imgur.com/tzGEHNZ.png">
       </div>
     </div>
 
