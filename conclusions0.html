@@ -11752,7 +11752,46 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><hr>
+<p><h1 align="center"> Conclusions </h1>
+<br>
+The conclusions chapter summarizes the results from our analysis. We tested multiple models (null, simple, and advanced) to attempt to identify correlations between a country's nutritional intake and disease mortality rate. The results showed varying degrees of success as discussed below.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From the Regression Models chapter, these were the $R^2$ values from the best models:</p>
+<table>
+<thead><tr>
+<th></th>
+<th>Cardio</th>
+<th>Diabetes</th>
+<th>Cancer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r^2$</td>
+<td>.807</td>
+<td>.759</td>
+<td>-6.873</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -11773,10 +11812,11 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Using this type of data to predict mortality rates of diseases in future years is difficult, but we were able to use lasso and ridge regression to varying degrees of success</li>
+<li>Using this type of data to predict mortality rates of diseases in future years is difficult, but we were able to use lasso and ridge regression to varying degrees of success. Lasso and ridge allow us to remove high-correlated variables or uninformative variables to have a more accurate predictor set.</li>
 <li>The data analyzed in this study can have observational usage: by looking at the magnitude and sign of coefficients, we can see which foods might contribute positively or negatively to a particular disease mortality rate.</li>
 <li>Is there a global superfood? The results suggest no, since any individual crop/livestock predictor is not very strongly correlated to the disease mortality rates and magnitudes are not that great.</li>
-<li>What about our hypotheses? Vegetables did not show up as a predictor that prevents disease, contrary to what we predicted. Fish liver oil, a common nutritional supplement, however, did show up as a predictor that decreases the risk of disease, which we hypothesized. We also predicted that sugars would show up as factor that causes disease, which it did. </li>
+<li>What about our hypotheses? 
+Does eating more vegetables help prevent the onset of a non-communicable disease? Our research suggests that vegetables are not very informative as vegetables did not show up as a top predictor that prevents disease, contrary to what we predicted. Fish liver oil, a common nutritional supplement, however, did show up as a predictor that decreases the risk of disease, which we hypothesized. We also predicted that sugars would show up as factor that causes disease, which it did. Thus, several popular hypothesizes were proven to have merit but other commonly accepted theories were unable to be proven from our chosen datasets. </li>
 </ul>
 
 </div>
@@ -11788,7 +11828,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Next-Steps">Next Steps<a class="anchor-link" href="#Next-Steps">&#182;</a></h2><hr>
-<p>Although the scope of this project was limited to simply analyzing the relationship between diets in various countries and corresponding disease mortality rates, in the future, we hope to explore other nuances in age-old problem of determining what specifically causes disease. We are especially interested in finding specific factors that cause cancer, as we concluded that diet was not a significant factor. We are planning to incorporate other factors such as exercise, which we believe should also have a big impact on disease mortality rates. In addition to factors that we believe simply cause disease, we are also considering other factors in countries that might be highly correlated with disease mortality rates. For example, a country's ability to provide medical care surely influences disease mortality rates. We might quantify this by looking at a country's GDP, which is positively correlated with their level of medical care.</p>
+<p>Although the scope of this project was limited to simply analyzing the relationship between diets in various countries and corresponding disease mortality rates, in the future, we hope to explore other nuances in age-old problem of determining what specifically causes disease. We are especially interested in finding specific factors that cause cancer, as we concluded that diet was not a significant factor. We are planning to incorporate other factors such as exercise, which we believe should also have a big impact on disease mortality rates. In addition to factors that we believe simply cause disease, we are also considering other factors in countries that might be highly correlated with disease mortality rates. For example, a country's ability to provide medical care surely influences disease mortality rates. We might quantify this by looking at a country's GDP, which is positively correlated with their level of medical care. Economics of a country are valuable since the data provided is not disease incidence rate but disease mortality rate. Better care and treatment options can alievate pain or stop the progression of the disease.</p>
 
 </div>
 </div>
